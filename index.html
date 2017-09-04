@@ -3,8 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <title>JiGuo</title>
-    <link rel="stylesheet" href="../../css/JiGuo.css">
-    <style></style>
+    <style>
+        .content{
+        width: 1300px;
+        margin:0 auto ;
+    }
+    .header{
+        text-align: center;
+    }
+    .header_left{
+        display: inline-block;
+    }
+    .header_left>img{
+        width:100px ;
+        height: 30px;
+        margin-right: 20px ;
+    }
+    .header_left>a{
+        display: inline-block;
+        margin: 5px 20px;
+        color: gray;
+        vertical-align: top;
+        text-decoration: none;
+    }
+    #img2{
+        vertical-align: top;
+        margin-top: 5px;
+        width: 15px;
+        height: 20px;
+        margin-left: 270px;
+    }
+    .header_right{
+        vertical-align: top;
+        width: 50px;
+        height: 25px;
+        border-color: red;
+        display: inline-block;
+        margin-top: 5px;
+        color: red;
+        font-size: 10px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .header_img{
+        width: 100%;
+        height: 300px;
+        background-image: url("../../jiGuo/img/original.jpg");
+        background-position: center top;
+    }
+    .like{
+        width:300px ;
+        height: 200px;
+        border: 1px solid #F5C175;
+        margin: 20px 800px;
+    }
+    .like span{
+        display: inline-block;
+        padding: 5px;
+        border: 1px solid white;
+        color: white;
+        background-color: gray;
+        opacity: 0.5;
+        margin-right: 10px;
+        float: right;
+    }
+    h1{
+        margin-top: 50px;
+        color: white;
+    }
+    .times{
+        color: white;
+        float: right;
+        margin: 10px ;
+    }
+    .sq{
+        float: right;
+        width:250px;
+        height: 50px;
+        background-color: red;
+        color: white;
+        font-size: 20px;
+    }
+    .h2{
+        margin-left: 135px;
+    }
+    .prev{
+        margin-left: 30px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 70px;
+    }
+    .prev>img,.next>img{
+        width: auto;
+        height: 150px;
+    }
+    .aa{
+        width: 210px;
+        height: 310px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 0px 1px;
+        display: inline-block;
+        margin:0 30px 0 30px;
+        vertical-align: top;
+        text-align: center;
+        position: relative;
+    }
+    .next{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 70px;
+    }
+    .hot9{
+        width: 210px;
+        height: 150px;
+    }
+    .t1{
+        text-align: center;
+    }
+    .m{
+        display: inline-block;
+        border: 1px solid red;
+        border-radius:5px ;
+        color: red;
+        font-size: 10px;
+        padding:2px 5px;
+        margin: 20px 5px 10px;
+    }
+    .span1{
+        color: red;
+    }
+    .sf{
+        color: white;
+        background-color: red;
+        padding: 3px 5px;
+        position: absolute;
+        top:0;
+        right: 0;
+        font-size: 10px;
+        border-radius: 3px 0 0  3px;
+    }
+    .vip{
+        color:#BFB586;
+        background-color:#F5F2C7;
+        padding: 3px;
+        position: absolute;
+        top:0;
+        right: 0;
+        font-size: 10px;
+        border-radius: 3px 0 0  3px;
+        display: none;
+    }
+    .vipp:hover .sf{
+        display: none;
+    }
+    .aa:hover .vip{
+        display: inline-block;
+    }
+    .vipp{
+        color: black;
+        text-decoration: none;
+    }
+    .vipp:hover .m{
+        color: green;
+        border-color: green;
+    }
+    .vipp:hover .spp{
+        color: green;
+    }
+    .center2{
+        background-color:#F7F7F7;
+        margin-top: 20px;
+        overflow: hidden;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .h3{
+        float: left;
+        display: inline-block;
+        text-align: left;
+        /*padding-left:6% ;*/
+        margin-left: 130px;
+        font-size: 20px;
+    }
+    .t4{
+        text-align: right;
+        float: left;
+        display: inline-block;
+        padding-left:67% ;
+        color: red;
+        font-size: 15px;
+    }
+    .t4>img{
+        width: 15px;
+        height: 15px;
+        padding-left: 5px;
+    }
+    .imgs_1{
+        width: 215px;
+        height: 230px;
+        border: 1px solid gray;
+        padding: 0 1px;
+        border-radius: 5px;
+        display: inline-block;
+        margin: 10px 30px;
+    }
+    .imgs_bgi{
+        border-radius: 5px 5px 0 0 ;
+        width: 100%;
+        height: 150px;
+    }
+    .imgs_font{
+        color: gray;
+        font-size: 10px;
+        margin: 10px 10px 0 10px;
+    }
+    .imgs_font2{
+        color: gray;
+        font-size: 10px;
+        margin: 5px 10px;
+        display: inline-block;
+    }
+    .imgs_font3{
+        color: gray;
+        font-size: 10px;
+        margin: 5px 10px;
+        display: inline-block;
+        margin-left: 80px;
+    }
+    .imgs_font3>img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .center-center{
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    .top{
+        overflow: hidden;
+        margin: 20px 0;
+    }
+    .center2_innr{
+        margin: 0 auto;
+        width: 1300px;
+        padding: 0 5%;
+    }
+    .imm{
+        margin-left: 5%;
+    }
+    .mo>img{
+        margin-left: -3px;
+    }
+    .k_font{
+        font-size: 10px;
+        text-align: left;
+        margin: 5px;
+        color: gray;
+    }
+    .k_font2{
+        display: inline-block;
+        color: red;
+    }
+    .footer1{
+        text-align: center;
+        color: red;
+        margin: 30px;
+    }
+    .foott{
+        width: 100%;
+        background-color: black;
+        text-align: center;
+    }
+    .div1{
+        display: inline-block;
+        width: 150px;
+        padding-top: 50px;
+        /*background-color: white;*/
+        /*border: 1px solid red;*/
+        vertical-align: text-top;
+
+    }
+    .ff{
+        text-align: left;
+        font-size: 10px;
+        margin-left: 15px;
+        color: gainsboro;
+    }
+    .div1>img{
+        width: 100px;
+    }
+    .titles{
+        font-size: 15px;
+        text-align: left;
+        color: white;
+        margin-left: 15px;
+    }
+    .foott-back{
+        margin-left: 90%;
+        width: 40px;
+        height: 40px;
+        background-color: darkgrey;
+        border-radius: 10px;
+    }
+    .foott-back>img{
+        margin-top: 10px;
+    }
+    .last{
+        text-align: center;
+        padding: 30px;
+    }
+    </style>
 </head>
 <body>
     <div class="boddys">
